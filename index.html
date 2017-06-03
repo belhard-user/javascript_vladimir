@@ -5,6 +5,125 @@
     <title>JavaScript</title>
 </head>
 <body>
-<script src="index.js"></script>
+<script>
+
+
+    function foo()
+    {
+        var sum = 0;
+        for(var i = 0; i < 1000000000; i++){
+            sum += i;
+        }
+    }
+
+
+    var table1 = new Array(5);
+    for (var i=0; i<table1.length; i++)
+        table1[i] = [i+1, i+2, i+3, i+4, i+5, i+6, i+7];
+    console.table(table1);
+
+
+
+    /*var show = function(word, end) {
+        console.log(word + ' ' + this.username + ' cost ' + this.price + end);
+    };
+
+    var pet1 = {
+        username: 'Tuzik',
+        price: 23
+    };
+
+    var pet2 = {
+        username: 'Murzik',
+        price: 12
+    };
+
+    show.call(pet1, 'Hello', '!!!!');
+    show.call(pet2, 'My name is', '????');*/
+
+
+
+
+
+
+
+
+
+    /*function foo()
+    {
+        console.log(arguments[2]);
+        console.log(typeof arguments);
+        console.log(arguments.length);
+    }*/
+
+
+
+
+
+
+
+
+
+    /*var userame = 'Tank';
+
+    var o = {
+        userame: 'Neo',
+
+        foo: function(){
+            var self = this;
+            function test()
+            {
+                console.log(self.userame);
+            }
+
+            test();
+        }
+    };
+
+    o.foo();*/
+
+
+    /*var show = function() {
+        console.log('My name is ' + this.username + ' cost ' + this.price + '!!!');
+    };
+
+    var pet1 = {
+        username: 'Tuzik',
+        price: 23,
+        show: show
+    };
+
+    var pet2 = {
+        username: 'Murzik',
+        price: 12,
+        show: show
+    };
+
+    pet1.show();
+    pet2.show();
+    show();*/
+
+
+
+    /*var user = {
+        name: 'Neo',
+        "age": 23,
+        hobby: {
+            morning: 'Run',
+            evening: 'Jump'
+        },
+        foo: function(){
+            console.log('Hello ' + this.name);
+        }
+    };
+
+
+    user.foo();
+    user['foo']();*/
+
+
+
+
+</script>
 </body>
 </html>
