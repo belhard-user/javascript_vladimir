@@ -5,125 +5,82 @@
     <title>JavaScript</title>
 </head>
 <body>
+
+
 <script>
+    var names = ['Neo', 'Morpheus', 'Tank', 'Trinity'];
+    var numbers = [1, 2, 10, 4, 20, 40, 4, 3, 30];
 
-
-    function foo()
-    {
-        var sum = 0;
-        for(var i = 0; i < 1000000000; i++){
-            sum += i;
-        }
-    }
-
-
-    var table1 = new Array(5);
-    for (var i=0; i<table1.length; i++)
-        table1[i] = [i+1, i+2, i+3, i+4, i+5, i+6, i+7];
-    console.table(table1);
+    var users = [
+        {name: 'Neo', likes: 12},
+        {name: 'Tank', likes: 15},
+        {name: 'Trinity', likes: 214},
+        {name: 'Tank', likes: 24}
+    ];
 
 
 
-    /*var show = function(word, end) {
-        console.log(word + ' ' + this.username + ' cost ' + this.price + end);
-    };
+    /*var sum = numbers.reduce(function(oldValue, newValue){
+        return oldValue + newValue;
+    });
+    
+    console.log(sum);*/
 
-    var pet1 = {
-        username: 'Tuzik',
-        price: 23
-    };
 
-    var pet2 = {
-        username: 'Murzik',
-        price: 12
-    };
+    /*numbers = numbers.filter(function(value){
+        return value > 10;
+    });*/
 
-    show.call(pet1, 'Hello', '!!!!');
-    show.call(pet2, 'My name is', '????');*/
+    /*numbers = numbers.map(function(value){
+        return Math.pow(value, 2);
+    });*/
 
 
 
 
+    /*names.forEach(function(){
+        console.log(arguments[0]);
+    });*/
 
 
-
-
-
-    /*function foo()
-    {
-        console.log(arguments[2]);
-        console.log(typeof arguments);
-        console.log(arguments.length);
+    /*for(var prop in names){
+        console.log(names[prop]);
     }*/
 
+    // names.splice(1, 0, 'asdasd');
 
 
 
 
+    /*names.sort(function(a, b){
+        return a < b;
+    });
+
+    numbers.sort(function(a, b){
+        return a > b;
+    });
+
+    console.log(names);
+    console.log(numbers);*/
+
+    // names.shift();
+    // names.unshift('Bond', 'Bond2');
+    // names = ['Bond'].concat(names);
+    /*names.reverse();
+    names.push('Bond');
+    names.reverse();*/
+
+    // var n = names.pop();
+
+    // var enemy = ['Smith', 'John Smith'];
+    // names.push('Bond', 'Spiderman');
+
+    // console.log(names);
 
 
+    /*var a = [1, 'hello', true, function(){console.log('hello world');}, {username: 'Neo'}];
 
-
-    /*var userame = 'Tank';
-
-    var o = {
-        userame: 'Neo',
-
-        foo: function(){
-            var self = this;
-            function test()
-            {
-                console.log(self.userame);
-            }
-
-            test();
-        }
-    };
-
-    o.foo();*/
-
-
-    /*var show = function() {
-        console.log('My name is ' + this.username + ' cost ' + this.price + '!!!');
-    };
-
-    var pet1 = {
-        username: 'Tuzik',
-        price: 23,
-        show: show
-    };
-
-    var pet2 = {
-        username: 'Murzik',
-        price: 12,
-        show: show
-    };
-
-    pet1.show();
-    pet2.show();
-    show();*/
-
-
-
-    /*var user = {
-        name: 'Neo',
-        "age": 23,
-        hobby: {
-            morning: 'Run',
-            evening: 'Jump'
-        },
-        foo: function(){
-            console.log('Hello ' + this.name);
-        }
-    };
-
-
-    user.foo();
-    user['foo']();*/
-
-
-
-
+    a[67] = 'jj';*/
 </script>
 </body>
 </html>
